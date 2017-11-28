@@ -31,6 +31,12 @@ Partial Class Form1
         Me.listBodyPart = New System.Windows.Forms.ListBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.btnSubmit = New System.Windows.Forms.Button()
+        Me.listAnimal = New System.Windows.Forms.ListBox()
+        Me.listNoun = New System.Windows.Forms.ListBox()
+        Me.listPluralNoun = New System.Windows.Forms.ListBox()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.Label7 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'listColor
@@ -107,18 +113,78 @@ Partial Class Form1
         '
         'btnSubmit
         '
-        Me.btnSubmit.Location = New System.Drawing.Point(271, 381)
+        Me.btnSubmit.Location = New System.Drawing.Point(246, 409)
         Me.btnSubmit.Name = "btnSubmit"
         Me.btnSubmit.Size = New System.Drawing.Size(75, 23)
         Me.btnSubmit.TabIndex = 8
         Me.btnSubmit.Text = "submit"
         Me.btnSubmit.UseVisualStyleBackColor = True
         '
+        'listAnimal
+        '
+        Me.listAnimal.FormattingEnabled = True
+        Me.listAnimal.Items.AddRange(New Object() {"cat", "dog", "frog", "snail", "kangaroo", "lion", "tiger", "bear", "duck"})
+        Me.listAnimal.Location = New System.Drawing.Point(181, 168)
+        Me.listAnimal.Name = "listAnimal"
+        Me.listAnimal.Size = New System.Drawing.Size(120, 95)
+        Me.listAnimal.TabIndex = 9
+        '
+        'listNoun
+        '
+        Me.listNoun.FormattingEnabled = True
+        Me.listNoun.Items.AddRange(New Object() {"sock", "brady", "mark", "computer", "book", "bell", "shirt"})
+        Me.listNoun.Location = New System.Drawing.Point(394, 168)
+        Me.listNoun.Name = "listNoun"
+        Me.listNoun.Size = New System.Drawing.Size(120, 95)
+        Me.listNoun.TabIndex = 10
+        '
+        'listPluralNoun
+        '
+        Me.listPluralNoun.FormattingEnabled = True
+        Me.listPluralNoun.Items.AddRange(New Object() {"leaves", "kids", "students", "socks", "plants", "shirts", "shoes", "doors"})
+        Me.listPluralNoun.Location = New System.Drawing.Point(15, 309)
+        Me.listPluralNoun.Name = "listPluralNoun"
+        Me.listPluralNoun.Size = New System.Drawing.Size(120, 95)
+        Me.listPluralNoun.TabIndex = 11
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(178, 152)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(38, 13)
+        Me.Label5.TabIndex = 12
+        Me.Label5.Text = "Animal"
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Location = New System.Drawing.Point(394, 151)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(33, 13)
+        Me.Label6.TabIndex = 13
+        Me.Label6.Text = "Noun"
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Location = New System.Drawing.Point(12, 282)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(62, 13)
+        Me.Label7.TabIndex = 14
+        Me.Label7.Text = "Plural Noun"
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(630, 470)
+        Me.Controls.Add(Me.Label7)
+        Me.Controls.Add(Me.Label6)
+        Me.Controls.Add(Me.Label5)
+        Me.Controls.Add(Me.listPluralNoun)
+        Me.Controls.Add(Me.listNoun)
+        Me.Controls.Add(Me.listAnimal)
         Me.Controls.Add(Me.btnSubmit)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.listBodyPart)
@@ -143,5 +209,11 @@ Partial Class Form1
     Friend WithEvents listBodyPart As System.Windows.Forms.ListBox
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents btnSubmit As System.Windows.Forms.Button
+    Friend WithEvents listAnimal As System.Windows.Forms.ListBox
+    Friend WithEvents listNoun As System.Windows.Forms.ListBox
+    Friend WithEvents listPluralNoun As System.Windows.Forms.ListBox
+    Friend WithEvents Label5 As System.Windows.Forms.Label
+    Friend WithEvents Label6 As System.Windows.Forms.Label
+    Friend WithEvents Label7 As System.Windows.Forms.Label
 
 End Class
