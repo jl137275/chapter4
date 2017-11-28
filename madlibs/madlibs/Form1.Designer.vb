@@ -37,6 +37,7 @@ Partial Class Form1
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
+        Me.btnExit = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'listColor
@@ -132,7 +133,7 @@ Partial Class Form1
         'listNoun
         '
         Me.listNoun.FormattingEnabled = True
-        Me.listNoun.Items.AddRange(New Object() {"sock", "brady", "mark", "computer", "book", "bell", "shirt"})
+        Me.listNoun.Items.AddRange(New Object() {"sock", "pineapple", "pizza", "computer", "book", "bell", "shirt"})
         Me.listNoun.Location = New System.Drawing.Point(394, 168)
         Me.listNoun.Name = "listNoun"
         Me.listNoun.Size = New System.Drawing.Size(120, 95)
@@ -174,11 +175,21 @@ Partial Class Form1
         Me.Label7.TabIndex = 14
         Me.Label7.Text = "Plural Noun"
         '
+        'btnExit
+        '
+        Me.btnExit.Location = New System.Drawing.Point(360, 409)
+        Me.btnExit.Name = "btnExit"
+        Me.btnExit.Size = New System.Drawing.Size(75, 23)
+        Me.btnExit.TabIndex = 15
+        Me.btnExit.Text = "exit"
+        Me.btnExit.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(630, 470)
+        Me.Controls.Add(Me.btnExit)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Label5)
@@ -215,5 +226,6 @@ Partial Class Form1
     Friend WithEvents Label5 As System.Windows.Forms.Label
     Friend WithEvents Label6 As System.Windows.Forms.Label
     Friend WithEvents Label7 As System.Windows.Forms.Label
+    Friend WithEvents btnExit As System.Windows.Forms.Button
 
 End Class
