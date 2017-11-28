@@ -35,12 +35,12 @@ Partial Class Form1
         Me.txtFinishTime1 = New System.Windows.Forms.TextBox()
         Me.txtFinishTime3 = New System.Windows.Forms.TextBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.Label8 = New System.Windows.Forms.Label()
-        Me.Label9 = New System.Windows.Forms.Label()
-        Me.lbl1stPlace = New System.Windows.Forms.Label()
-        Me.lbl3rdPlace = New System.Windows.Forms.Label()
         Me.lbl2ndPlace = New System.Windows.Forms.Label()
+        Me.lbl3rdPlace = New System.Windows.Forms.Label()
+        Me.lbl1stPlace = New System.Windows.Forms.Label()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.Label7 = New System.Windows.Forms.Label()
         Me.btnCalculateResults = New System.Windows.Forms.Button()
         Me.btnClear = New System.Windows.Forms.Button()
         Me.btnExit = New System.Windows.Forms.Button()
@@ -159,23 +159,29 @@ Partial Class Form1
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Race Results"
         '
-        'Label7
+        'lbl2ndPlace
         '
-        Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(54, 17)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(54, 13)
-        Me.Label7.TabIndex = 0
-        Me.Label7.Text = "1st Place:"
+        Me.lbl2ndPlace.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.lbl2ndPlace.Location = New System.Drawing.Point(157, 49)
+        Me.lbl2ndPlace.Name = "lbl2ndPlace"
+        Me.lbl2ndPlace.Size = New System.Drawing.Size(100, 23)
+        Me.lbl2ndPlace.TabIndex = 5
         '
-        'Label8
+        'lbl3rdPlace
         '
-        Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(54, 50)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(58, 13)
-        Me.Label8.TabIndex = 1
-        Me.Label8.Text = "2nd Place:"
+        Me.lbl3rdPlace.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.lbl3rdPlace.Location = New System.Drawing.Point(157, 86)
+        Me.lbl3rdPlace.Name = "lbl3rdPlace"
+        Me.lbl3rdPlace.Size = New System.Drawing.Size(100, 23)
+        Me.lbl3rdPlace.TabIndex = 4
+        '
+        'lbl1stPlace
+        '
+        Me.lbl1stPlace.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.lbl1stPlace.Location = New System.Drawing.Point(157, 16)
+        Me.lbl1stPlace.Name = "lbl1stPlace"
+        Me.lbl1stPlace.Size = New System.Drawing.Size(100, 25)
+        Me.lbl1stPlace.TabIndex = 3
         '
         'Label9
         '
@@ -186,29 +192,23 @@ Partial Class Form1
         Me.Label9.TabIndex = 2
         Me.Label9.Text = "3rd Place:"
         '
-        'lbl1stPlace
+        'Label8
         '
-        Me.lbl1stPlace.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.lbl1stPlace.Location = New System.Drawing.Point(157, 16)
-        Me.lbl1stPlace.Name = "lbl1stPlace"
-        Me.lbl1stPlace.Size = New System.Drawing.Size(100, 25)
-        Me.lbl1stPlace.TabIndex = 3
+        Me.Label8.AutoSize = True
+        Me.Label8.Location = New System.Drawing.Point(54, 50)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(58, 13)
+        Me.Label8.TabIndex = 1
+        Me.Label8.Text = "2nd Place:"
         '
-        'lbl3rdPlace
+        'Label7
         '
-        Me.lbl3rdPlace.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.lbl3rdPlace.Location = New System.Drawing.Point(157, 86)
-        Me.lbl3rdPlace.Name = "lbl3rdPlace"
-        Me.lbl3rdPlace.Size = New System.Drawing.Size(100, 23)
-        Me.lbl3rdPlace.TabIndex = 4
-        '
-        'lbl2ndPlace
-        '
-        Me.lbl2ndPlace.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.lbl2ndPlace.Location = New System.Drawing.Point(157, 49)
-        Me.lbl2ndPlace.Name = "lbl2ndPlace"
-        Me.lbl2ndPlace.Size = New System.Drawing.Size(100, 23)
-        Me.lbl2ndPlace.TabIndex = 5
+        Me.Label7.AutoSize = True
+        Me.Label7.Location = New System.Drawing.Point(54, 17)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(54, 13)
+        Me.Label7.TabIndex = 0
+        Me.Label7.Text = "1st Place:"
         '
         'btnCalculateResults
         '
